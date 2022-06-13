@@ -1,0 +1,33 @@
+using System;
+
+namespace Logica
+{
+    class program
+    {
+        static void Main(string[] args)
+        {
+
+            double A, B, area, perimetro, diagonal;
+
+            A = double.Parse(Console.ReadLine());
+            B = double.Parse(Console.ReadLine());
+
+            area = A * B;
+            /* Calculo da área*/
+
+            perimetro = 2 * A + 2 * B;
+            /* calculo perimetro*/
+
+            diagonal = Math.Sqrt(Math.Pow(B, 2.0) + Math.Pow(A, 2.0)) ;
+            /* calculo diagonal*/
+
+            Console.WriteLine("AREA = " + area.ToString("F4")); /* Mostra na tela o resultado */
+            Console.WriteLine("PERIMETRO = " + perimetro.ToString("F4")); /* Mostra na tela o resultado */
+            Console.WriteLine("DIAGONAL = " + diagonal.ToString("F4")); /* Mostra na tela o resultado */
+
+
+
+
+        }
+    }
+}
