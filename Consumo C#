@@ -1,0 +1,22 @@
+using System;
+
+namespace Logica
+{
+    class program
+    {
+        static void Main(string[] args)
+        {
+
+            int X;
+            double Y, KM;
+
+            X = int.Parse(Console.ReadLine());
+            Y = double.Parse(Console.ReadLine());
+
+            KM = X / Y;
+
+            Console.WriteLine(KM.ToString("F3") + " Km/l");
+
+        }
+    }
+}
