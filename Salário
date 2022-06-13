@@ -1,0 +1,27 @@
+using System;
+
+namespace Logica
+{
+    class program
+    {
+        static void Main(string[] args)
+        {
+
+            int N, horasTrabalhadas, number;
+            double valorHora, salary;
+
+            N = int.Parse(Console.ReadLine());
+            horasTrabalhadas = int.Parse(Console.ReadLine());
+            valorHora = double.Parse(Console.ReadLine());
+
+            salary = horasTrabalhadas * valorHora;
+            number = N;
+
+            Console.WriteLine("Number = " + number);
+            Console.WriteLine("Salary = R$ " + salary.ToString("F2"));
+
+
+
+        }
+    }
+}
