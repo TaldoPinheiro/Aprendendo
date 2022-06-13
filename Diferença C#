@@ -1,0 +1,21 @@
+namespace Logica
+{
+    class program
+    {
+        static void Main(string[] args)
+        {
+
+            int A, B, C, D, DIFF;
+
+            A = int.Parse(Console.ReadLine());
+            B = int.Parse(Console.ReadLine());
+            C = int.Parse(Console.ReadLine());
+            D = int.Parse(Console.ReadLine());
+
+            DIFF = (A * B - C * D);
+
+            Console.WriteLine("DIFF = " + DIFF);
+
+        }
+    }
+}
