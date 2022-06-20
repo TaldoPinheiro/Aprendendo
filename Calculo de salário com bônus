@@ -1,0 +1,27 @@
+using System;
+
+namespace Logica
+{
+    class program
+    {
+        static void Main(string[] args)
+        {
+
+            string vendedor;
+            double salarioFixo, vendasEfetuadas, comissao, percentual, total;
+
+            vendedor = (Console.ReadLine()); 
+            salarioFixo = double.Parse(Console.ReadLine()); 
+            vendasEfetuadas = double.Parse(Console.ReadLine());
+            percentual = 15.0 / 100; //15%
+
+            comissao = vendasEfetuadas * percentual; //Calcula a comissão
+
+            total = salarioFixo + comissao; //Calcula o total do salario com a comissão
+
+            Console.WriteLine("Total = R$" + total.ToString("F2"));
+
+
+        }
+    }
+}
