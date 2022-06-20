@@ -1,0 +1,21 @@
+using System;
+
+namespace Logica
+{
+    class program
+    {
+        static void Main(string[] args)
+        {
+            double raio, pi, volume;
+
+            raio = double.Parse(Console.ReadLine());
+            pi = 3.14159;
+
+            volume = (4 / 3.0) * pi * Math.Pow(raio,3); //Calculo do volume
+
+            Console.WriteLine("VOLUME = " + volume.ToString("F3"));
+
+
+        }
+    }
+}
