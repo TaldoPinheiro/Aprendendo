@@ -1,0 +1,31 @@
+using System;
+
+namespace Logica
+{
+    class program
+    {
+        static void Main(string[] args)
+        {
+            int x, y, z;
+
+            String[] vet = Console.ReadLine().Split(' ');
+
+            x = int.Parse(vet[0]);
+            y = int.Parse(vet[1]);
+            z = int.Parse(vet[2]);
+
+            if(x < z && x < z)
+            {
+                Console.WriteLine($"\n MENOR = " + x);
+            }
+            else if(y < z)
+            {
+                Console.WriteLine($"\n MENOR = " + y);
+            }
+            else
+            {
+                Console.WriteLine($"\n MENOR = " + z);
+            }
+        }
+    }
+}
