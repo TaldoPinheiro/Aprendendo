@@ -1,0 +1,23 @@
+using System;
+
+namespace Logica
+{
+    class program
+    {
+        static void Main(string[] args)
+        {
+            int N;
+
+
+            Console.Write("Digite o valor da sua tabuada: ");
+            N = int.Parse(Console.ReadLine());
+
+            for (int i=1; i<=10; i+=1)
+            {
+                int resultado = i * N;
+                Console.WriteLine(i + " x " + N + " = " + resultado );
+            }
+            Console.ReadLine();
+        }
+    }
+}
