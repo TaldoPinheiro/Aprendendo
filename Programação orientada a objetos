@@ -1,0 +1,57 @@
+using System;
+
+namespace Logica
+{
+    class program
+    {
+        static void Main(string[] args)
+        {
+            Pessoa x, y;
+
+            x = new Pessoa();
+            y = new Pessoa();
+
+
+            Console.WriteLine("Dados da primeira pessoa: ");
+            Console.Write("Nome: ");
+            x.N1 = Console.ReadLine();
+            Console.Write("Idade: ");
+            y.I1 = int.Parse(Console.ReadLine());
+
+
+            Console.WriteLine("Dados da segunda pessoa: ");
+            Console.Write("Nome: ");
+            x.N2 = Console.ReadLine();
+            Console.Write("Idade: ");
+            y.I2 = int.Parse(Console.ReadLine());
+
+            if (y.I1 > y.I2)
+            {
+                Console.WriteLine("Pessoa mais velha: " +x.N1);
+            }
+            else
+            {
+                Console.WriteLine("Pessoa mais velha: " +x.N2);
+            }
+
+
+        }
+
+    }
+}
+
+
+
+//////////////////////////////////////////////////////////////////////
+
+namespace Logica
+{
+    class Pessoa
+    {
+        public int I1;
+        public int I2;
+
+        public string N1;
+        public string N2;
+    }
+}
