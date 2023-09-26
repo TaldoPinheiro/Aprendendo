@@ -1,0 +1,27 @@
+using System;
+
+namespace Treino
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            /*Faça um programa que verifique (usando if e else) se uma letra digitada é vogal ou consoante.
+             */
+
+            char letra;
+
+            Console.Write("Digite uma letra: ");
+            letra = Convert.ToChar(Console.ReadLine());
+
+            if (letra == 'A' || letra == 'E' || letra == 'I' || letra == 'O' || letra == 'U')
+            {
+                Console.WriteLine("A letra digitada é uma vogal: " + letra);
+            }
+            else
+            {
+                Console.WriteLine("A letra digitada é uma consoante: " + letra);
+            }
+        }
+    }
+}
