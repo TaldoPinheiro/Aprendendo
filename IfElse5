@@ -1,0 +1,60 @@
+using System;
+
+namespace Treino
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            /*
+            * Faça um script que lê as duas notas parciais obtidas por um aluno numa disciplina ao longo de um semestre, e calcule a sua média. 
+            */
+
+            double nota1, nota2, media;
+
+            Console.WriteLine("Digite suas duas notas: ");
+            nota1 = Convert.ToDouble(Console.ReadLine());
+            nota2 = Convert.ToDouble(Console.ReadLine());
+
+            //Calculando a media
+            media = (nota1 + nota2) / 2.0;
+
+            //Recebendo as notas
+            if (media > 9.0)
+            {
+                Console.WriteLine("Suas notas são: " + nota1.ToString("F1") + " - " + nota2.ToString("F1"));
+                Console.WriteLine("A media de suas notas são: " + media.ToString("F1"));
+                Console.WriteLine("Conceito A");
+                Console.WriteLine("Aprovado :)");
+            }
+            else if (media >= 7.5 && media < 9.0)
+            {
+                Console.WriteLine("Suas notas são: " + nota1.ToString("F1") + " - " + nota2.ToString("F1"));
+                Console.WriteLine("A media de suas notas são: " + media.ToString("F1"));
+                Console.WriteLine("Conceito B");
+                Console.WriteLine("Aprovado :)");
+            }
+            else if (media >= 6.0 && media < 7.5)
+            {
+                Console.WriteLine("Suas notas são: " + nota1.ToString("F1") + " - " + nota2.ToString("F1"));
+                Console.WriteLine("A media de suas notas são: " + media.ToString("F1"));
+                Console.WriteLine("Conceito C");
+                Console.WriteLine("Aprovado :)");
+            }
+            else if (media >= 4.0 && media < 6.0)
+            {
+                Console.WriteLine("Suas notas são: " + nota1.ToString("F1") + " - " + nota2.ToString("F1"));
+                Console.WriteLine("A media de suas notas são: " + media.ToString("F1"));
+                Console.WriteLine("Conceito D");
+                Console.WriteLine("Reprovado :(");
+            }
+            else
+            {
+                Console.WriteLine("Suas notas são: " + nota1.ToString("F1") + " - " + nota2.ToString("F1"));
+                Console.WriteLine("A media de suas notas são: " + media.ToString("F1"));
+                Console.WriteLine("Conceito E");
+                Console.WriteLine("Reprovado :(");
+            }
+        }
+    }
+}
