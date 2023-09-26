@@ -1,0 +1,48 @@
+using System;
+
+namespace Treino
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            /*  Faça um programa que leia três números, verifique (usando if e else) e mostre o maior e o menor deles  */
+
+            int X, Y, Z;
+
+            Console.WriteLine("Digite três números: ");
+
+            X = Convert.ToInt32(Console.ReadLine());
+            Y = Convert.ToInt32(Console.ReadLine());
+            Z = Convert.ToInt32(Console.ReadLine());
+
+            //Maior número
+            if (X > Y && X > Z)
+            {
+                Console.WriteLine("O maior número é: " + X);
+            }
+            else if (Y > X && Y > Z)
+            {
+                Console.WriteLine("O maior número é: " + Y);
+            }
+            else
+            {
+                Console.WriteLine("O maior número é:" + Z);
+            }
+
+            //Menor número
+            if (X < Y && X < Z)
+            {
+                Console.WriteLine("O menor número é: " + X);
+            }
+            else if (Y < X && Y < Z)
+            {
+                Console.WriteLine("O menor número é: " + Y);
+            }
+            else
+            {
+                Console.WriteLine("O menor número é:" + Z);
+            }
+        }
+    }
+}
