@@ -1,0 +1,27 @@
+using System;
+
+namespace Treino
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            /*Faça um programa que peça um valor e mostre na tela se o valor é positivo ou negativo  
+             */
+
+            int X;
+
+            Console.Write("Digite um número: ");
+            X = Convert.ToInt32(Console.ReadLine());
+
+            if (X < 0)
+            {
+                Console.WriteLine("O número digitado é negativo: " + X);
+            }
+            else
+            {
+                Console.WriteLine("O número digitado é positivo: " + X);
+            }
+        }
+    }
+}
