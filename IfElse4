@@ -1,0 +1,32 @@
+using System;
+
+namespace Treino
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            /*Faça um programa que dada a idade de uma pessoa, retorna uma das seguintes mensagens: “Não pode
+             *  nem votar e nem dirigir”, “Pode votar, mas não pode dirigir”, “Pode votar e pode dirigir”.
+             */
+
+            int idade;
+
+            Console.Write("Digite sua idade: ");
+            idade = Convert.ToInt32(Console.ReadLine());
+
+            if (idade >= 18)
+            {
+                Console.WriteLine("Pode votar e dirigir.");
+            }
+            else if (idade >= 16 && idade < 18)
+            {
+                Console.WriteLine("Pode votar, porém não pode dirigir.");
+            }
+            else
+            {
+                Console.WriteLine("Não pode votar nem dirigir.");
+            }
+        }
+    }
+}
