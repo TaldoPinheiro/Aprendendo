@@ -1,0 +1,43 @@
+using System;
+
+namespace Treino
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            /*Faça um programa que leia N nuúmeros inteiros e armazene-os em um vetor. Em seguida, mostre na tela
+             *  - todos os números pares;
+             *  - quantidade de números pares.
+            */
+
+            int N, cont;
+
+            N = Convert.ToInt32(Console.ReadLine());
+            int[] vet = new int[N];
+            cont = 0;
+
+            string[] vetNumber = Console.ReadLine().Split(' ');
+
+            for (int i = 0; i < N; i++)
+            {
+                vet[i] = Convert.ToInt32(vetNumber[i]);
+            }
+
+            //Achando os números pares
+
+            for (int i = 0; i < N; i++)
+            {
+                if (vet[i] % 2 == 0)
+                {
+                    Console.Write(vet[i] + " ");
+                    cont += 1;
+                }
+            }
+
+            //Mostrando quantos números pares tem no vetor.
+            Console.WriteLine("");
+            Console.WriteLine("O total de números pares é: " + cont);
+        }
+    }
+}
