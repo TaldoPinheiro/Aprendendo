@@ -1,0 +1,46 @@
+using System;
+
+namespace Treino
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            /*
+ * Usando classe com vetores para resolver uma questão de quartos usando classe
+ */
+
+            int Q, N;
+
+            Q = 10;
+            Treino[] vect = new Treino[Q];
+
+            Console.Write("How many rooms will be rented? ");
+            N = Convert.ToInt32(Console.ReadLine());
+
+            //Alocando os quartos
+            for (int i = 1; i <= N; i++)
+            {
+                Console.WriteLine("Rent #" + i);
+                Console.Write("Name: ");
+                string name = Console.ReadLine();
+                Console.Write("Email: ");
+                string email = Console.ReadLine();
+                Console.Write("Room: ");
+                int room = Convert.ToInt32(Console.ReadLine());
+                //vect[room] = new Treino { Name = name, Email = email, Room = room };
+                Console.WriteLine();
+            }
+
+            //Imprimindo na tela os quartos ocupados em ordem crescente
+            Console.WriteLine("Busy rooms: ");
+            for (int i = 0; i < Q; i++)
+            {
+                if (vect[i] != null)
+                {
+                    //Console.WriteLine(vect[i].Room + ": " + vect[i].Name + ", " + vect[i].Email);
+                }
+            }
+        }
+    }
+}
