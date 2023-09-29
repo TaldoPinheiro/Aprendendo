@@ -1,0 +1,49 @@
+using System;
+
+namespace Treino
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            /* Faça um prgrama que leia N números reais e armazene-os em um vetor. Em seguida, mostrar na tela o maior número
+             * do vetor (supor não haver empates). Mostrar também a posição do maior elemento.
+             */
+
+            int N;
+            double maior, menor, contM, contN;
+
+            N = Convert.ToInt32(Console.ReadLine());
+            double[] vet = new double[N];
+            contM = 0.0;
+            contN = 0.0;
+
+            string[] vet1 = Console.ReadLine().Split(' ');
+
+            for (int i = 0; i < N; i++)
+            {
+                vet[i] = Convert.ToDouble(vet1[i]);
+            }
+
+            maior = vet[0];
+            menor = vet[0];
+
+            for (int i = 0; i < N; i++)
+            {
+                if (maior < vet[i])
+                {
+                    maior = vet[i];
+                    contM = i;
+                }
+                if (menor > vet[i])
+                {
+                    menor = vet[i];
+                    contN = i;
+                }
+            }
+
+            Console.WriteLine("Maior número: " + maior + " posição: " + contM);
+            Console.WriteLine("Menor número " + menor + " posição: " + contN);
+        }
+    }
+}
