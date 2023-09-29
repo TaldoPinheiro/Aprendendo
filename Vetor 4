@@ -1,0 +1,49 @@
+using System;
+
+namespace Treino
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            /* Fazer um programa para ler o vetor de N números reais. Em seguida, mostrar na tela a 
+             * média aritmética de todos os elementos. Depois mostrar todos os elementos do vetor
+             * que estejam abaixo da media.
+             */
+
+            int N;
+            double media, soma;
+
+            N = Convert.ToInt32(Console.ReadLine());
+            double[] vet = new double[N];
+            soma = 0;
+
+            string[] vetNumber = Console.ReadLine().Split(' ');
+
+            //Lendo os números reais
+            for (int i = 0; i < N; i++)
+            {
+                vet[i] = Convert.ToDouble(vetNumber[i]);
+            }
+
+            //Calculando a média
+            for (int i = 0; i < N; i++)
+            {
+                soma += vet[i];
+            }
+
+            media = soma / N;
+            Console.WriteLine(media);
+
+            //Mostrando os números abaixo da média
+
+            for (int i = 0; i < N; i++)
+            {
+                if (vet[i] < media)
+                {
+                    Console.WriteLine(vet[i]);
+                }
+            }
+        }
+    }
+}
