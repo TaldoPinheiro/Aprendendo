@@ -1,0 +1,45 @@
+using System;
+
+namespace Treino
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            /*Faça um programa para ler dois vetores A e B, contendo N elementos em cada. Em seguida, gere um terceiro vetor C
+            * onde cada elemento de C é a soma dos elementos correspondentes de A e B. Imprima o vetor C gerado.
+            */
+
+            int N;
+
+            N = Convert.ToInt32(Console.ReadLine());
+            int[] A = new int[N];
+            int[] B = new int[N];
+            int[] C = new int[N];
+
+            Console.WriteLine("Vetor A");
+
+            string[] vetA = Console.ReadLine().Split(' ');
+            for (int i = 0; i < N; i++)
+            {
+                A[i] = Convert.ToInt32(vetA[i]);
+            }
+
+            Console.WriteLine("Vetor B");
+
+            string[] vetB = Console.ReadLine().Split(' ');
+            for (int i = 0; i < N; i++)
+            {
+                B[i] = Convert.ToInt32(vetB[i]);
+            }
+
+            Console.WriteLine("Veotr C");
+
+            for (int i = 0; i < N; i++)
+            {
+                C[i] = A[i] + B[i];
+                Console.Write(C[i] + " ");
+            }
+        }
+    }
+}
