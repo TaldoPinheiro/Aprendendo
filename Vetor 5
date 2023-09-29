@@ -1,0 +1,45 @@
+using System;
+
+namespace Treino
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            /*
+            * Fazer um programa para ler um vetor de N números inteiros. Em seguida, mostrar na tela
+            * a média aritmética dos números pares.
+            */
+
+            int N, cont, soma;
+            double media;
+
+            N = Convert.ToInt32(Console.ReadLine());
+            cont = 0;
+            soma = 0;
+
+            int[] vet = new int[N];
+            string[] vetNumber = Console.ReadLine().Split(' ');
+
+            //Lendo os números
+            for (int i = 0; i < N; i++)
+            {
+                vet[i] = Convert.ToInt32(vetNumber[i]);
+            }
+
+            //Achando os números pares
+            for (int i = 0; i < N; i++)
+            {
+                if (vet[i] % 2 == 0)
+                {
+                    soma += vet[i];
+                    cont += 1;
+                }
+            }
+
+            //mostrando a média na tela
+            media = soma / cont;
+            Console.WriteLine(media.ToString("F1"));
+        }
+    }
+}
